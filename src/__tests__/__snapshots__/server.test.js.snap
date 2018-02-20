@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server create invalid 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "field": "text",
+      "location": "body",
+      "messages": Array [
+        "\\"text\\" is not allowed to be empty",
+        "\\"text\\" length must be at least 2 characters long",
+      ],
+      "types": Array [
+        "any.empty",
+        "string.min",
+      ],
+    },
+  ],
+  "status": 400,
+  "statusText": "Bad Request",
+}
+`;
+
+exports[`Server create valid 1`] = `
+Object {
+  "id": 4,
+  "text": "Test",
+}
+`;
+
+exports[`Server delete 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 2,
+    "text": "React",
+  },
+  Object {
+    "completed": false,
+    "id": 3,
+    "text": "Redux",
+  },
+]
+`;
+
+exports[`Server get all 1`] = `
+Array [
+  Object {
+    "completed": true,
+    "id": 1,
+    "text": "Json-mock",
+  },
+  Object {
+    "completed": true,
+    "id": 2,
+    "text": "React",
+  },
+  Object {
+    "completed": false,
+    "id": 3,
+    "text": "Redux",
+  },
+]
+`;
+
+exports[`Server get existing 1`] = `
+Object {
+  "completed": true,
+  "id": 1,
+  "text": "Json-mock",
+}
+`;
+
+exports[`Server get not existing  1`] = `Object {}`;
+
+exports[`Server update invalid 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "field": "text",
+      "location": "body",
+      "messages": Array [
+        "\\"text\\" is not allowed to be empty",
+        "\\"text\\" length must be at least 2 characters long",
+      ],
+      "types": Array [
+        "any.empty",
+        "string.min",
+      ],
+    },
+  ],
+  "status": 400,
+  "statusText": "Bad Request",
+}
+`;
+
+exports[`Server update valid 1`] = `
+Object {
+  "id": 1,
+  "text": "Test",
+}
+`;
