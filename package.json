@@ -1,5 +1,5 @@
 {
-  "name": "todomvc-server",
+  "name": "react-developers-workshops-server",
   "version": "0.0.1",
   "license": "MIT",
   "engines": {
@@ -25,14 +25,14 @@
     "cors": "^2.8.1",
     "express-jwt": "^5.1.0",
     "express-validation": "^1.0.1",
-    "faker": "^3.1.0",
+    "faker": "^4.1.0",
     "joi": "^9.1.1",
     "json-server": "^0.12.1",
     "jsonwebtoken": "^7.1.9"
   },
   "scripts": {
-    "start": "nodemon src/server.js",
-    "lint": "./node_modules/eslint/bin/eslint.js src",
+    "start": "nodemon src/index.js",
+    "lint": "eslint src --fix",
     "prepush": "yarn lint",
     "test": "jest --watchAll",
     "test:ci": "yarn lint && jest"

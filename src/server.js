@@ -48,6 +48,14 @@ app.put('/todos/:id', validate(validations.todo), function(req, res, next) {
   next();
 });
 
+app.post('/posts', validate(validations.post), function(req, res, next) {
+  next();
+});
+
+app.put('/posts/:id', validate(validations.post), function(req, res, next) {
+  next();
+});
+
 app.get('/me', function(req, res) {
   res.send(req.user);
 });
